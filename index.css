@@ -7,4 +7,30 @@ body {
 }
 canvas {
     background-image: url('img/background/scroll-bg-far.png');
+    display: none;
 }
+.menu-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  h1 {
+    color: #ffffff;
+    font-size: 24px;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 8px 16px;
+    background-color: #00FF7F;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #008800;
+  }
