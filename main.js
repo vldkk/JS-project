@@ -7,7 +7,6 @@ import * as images from './img/index.js';
 startGameButton.addEventListener('click', startGame);
 muteButton.addEventListener('click', muteSound);
 unmuteButton.addEventListener('click', unmuteSound);
-canvas.style.display = 'none';
 
 function startGame() {
     canvas.style.display = 'block';
@@ -86,13 +85,13 @@ function startGame() {
     }
     let player = new Player();
     let platforms = [
-        new Platform({ x: 0, y: 450, image: images.tileGrassLeft }),
-        new Platform({ x: 128, y: 450, image: images.tileGrass }),
-        new Platform({ x: 510, y: 450, image: images.tileGrassRight }),
+        new Platform({ x: 0, y: 470, image: images.tileGrassLeft }),
+        new Platform({ x: 128, y: 470, image: images.tileGrass }),
+        new Platform({ x: 510, y: 470, image: images.tileGrassRight }),
         new Platform({ x: 640, y: 250, image: images.tileJumpLeft }),
         new Platform({ x: 704, y: 250, image: images.tileJump }),
-        new Platform({ x: 900, y: 450, image: images.tileGrassLeft }),
-        new Platform({ x: 1028, y: 450, image: images.tileGrass })];
+        new Platform({ x: 900, y: 470, image: images.tileGrassLeft }),
+        new Platform({ x: 1028, y: 470, image: images.tileGrass })];
 
     let isCollidingWithPlatform = false;
     const keys = {
